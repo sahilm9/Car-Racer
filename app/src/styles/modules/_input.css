@@ -1,0 +1,12 @@
+/*Input styles*/
+
+input[type="button"] {
+    background: #77b72f;
+    color: white;
+    padding: 0.625rem 1.25rem;
+    border: solid 0.0625rem #444;
+}
+input#reset{
+  background: #fc3;
+  color: #444;
+}

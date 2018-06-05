@@ -1,12 +1,34 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
-<link rel="stylesheet" href="dist/styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Car game, racing game, car racing game, car driving game, car, game">
+  <meta name="description" content="Come, guess the car which will win the race">
+  <title>Car Racer Game</title>
+  <!-- build:css assets/styles/styles.css -->
+  <link rel="stylesheet" href="dist/styles/styles.css">
+  <!-- endbuild -->
 </head>
+<body id="race">
+    <h1>Car Racer</h1>
 
-<body>
-<script src='dist/scripts/app.js'></script>
+    <input type="button" value="Race!" id="go">
+    <input type="button" value="Reset" id="reset">
+
+    <div id="racetrack">
+        <img src="src/images/car1.png" alt="Green car" id="car1" class="car">
+        <img src="src/images/car2.png" alt="Red car" id="car2" class="car">
+    </div>
+
+    <div id="raceInfoContainer" class="clearfix">
+        <h2 id="raceInfoContainer__title">Results</h2>
+        <div id="raceInfoContainer__raceInfo1" class="raceInfo">Car 1<span></span></div>
+        <div id="raceInfoContainer__raceInfo2" class="raceInfo">Car 2<span></span></div>
+    </div>
+
+  <!-- build:js assets/scripts/app.js -->
+  <script src='dist/scripts/app.js'></script>
+  <!-- endbuild -->
 </body>
 </html>

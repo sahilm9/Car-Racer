@@ -1,0 +1,18 @@
+#racetrack {
+    background: url('../images/road.jpg') center left repeat-x;
+    height: 20.625rem;
+    border-right: dashed 0.625rem #fff;
+    box-sizing: border-box;
+    margin: 2.5rem 0;
+}
+
+.car {
+    display: block;
+    position: relative;
+}
+
+#car1 {top: 30px;}
+#car2 {top: 100px;}
+
+
+
