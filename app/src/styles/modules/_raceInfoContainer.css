@@ -1,0 +1,41 @@
+#raceInfoContainer{
+    width: 80%;
+    margin: 2.5rem auto 0;
+    background: #333;
+    height: 12.5rem;
+
+    &__title{
+      color: #fff;
+      text-transform: uppercase;
+      border-bottom: solid 0.0625rem #fff;
+      padding: 1.25rem 0;
+    }
+    &__raceInfo1{
+      color: #77b82f;
+    }
+    &__raceInfo2{
+      color: #b82f3e;
+    }
+}
+
+.raceInfo{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  width: 50%;
+  float: left;
+
+  & span{
+    display: block;
+    font-weight: normal;
+    font-size: 1.125rem;
+    color: #fff;
+  }
+}
+.clearfix:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+
