@@ -2,7 +2,7 @@
     width: 80%;
     margin: 2.5rem auto 0;
     background: #333;
-    height: 12.5rem;
+    min-height:15.625rem;
 
     &__title{
       color: #fff;
@@ -12,9 +12,11 @@
     }
     &__raceInfo1{
       color: #77b82f;
+      flex: 50% 1 1;
     }
     &__raceInfo2{
       color: #b82f3e;
+      flex: 50% 1 1;
     }
 }
 
@@ -22,8 +24,8 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
-  width: 50%;
-  float: left;
+  padding:1rem 0.625rem;
+  box-sizing:border-box;
 
   & span{
     display: block;
@@ -32,10 +34,8 @@
     color: #fff;
   }
 }
-.clearfix:after {
-    content:"";
-    display: table;
-    clear: both;
+.flex-container{
+  display:flex;
+  flex-direction:row;
 }
-
 
