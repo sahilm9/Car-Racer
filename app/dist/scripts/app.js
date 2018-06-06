@@ -135,10 +135,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   });
   // Listening for click on reset button
   (0, _jquery2.default)('#reset').click(function () {
-    // Resetting the cars to their starting positions
-    (0, _jquery2.default)('.car').css('left', '0');
-    // Clearing the text
-    (0, _jquery2.default)('.raceInfo span').text('');
+    // reloads the page, so the game can be restarted again.
+    document.location.reload();
   });
 }); // importing j query
 
