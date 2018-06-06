@@ -391,7 +391,7 @@ input#reset{
     width: 80%;
     margin: 2.5rem auto 0;
     background: #333;
-    height: 12.5rem;
+    min-height:15.625rem;
 }
 
 #raceInfoContainer__title{
@@ -403,18 +403,30 @@ input#reset{
 
 #raceInfoContainer__raceInfo1{
       color: #77b82f;
+      -webkit-box-flex: 50%;
+      -webkit-flex: 50% 1 1;
+         -moz-box-flex: 50%;
+          -ms-flex: 50% 1 1;
+              flex: 50% 1 1;
     }
 
 #raceInfoContainer__raceInfo2{
       color: #b82f3e;
+      -webkit-box-flex: 50%;
+      -webkit-flex: 50% 1 1;
+         -moz-box-flex: 50%;
+          -ms-flex: 50% 1 1;
+              flex: 50% 1 1;
     }
 
 .raceInfo{
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
-  width: 50%;
-  float: left;
+  padding:1rem 0.625rem;
+  -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+          box-sizing:border-box;
 }
 
 .raceInfo span{
@@ -424,10 +436,19 @@ input#reset{
     color: #fff;
   }
 
-.clearfix:after {
-    content:"";
-    display: table;
-    clear: both;
+.flex-container{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:row;
+     -moz-box-orient:horizontal;
+     -moz-box-direction:normal;
+      -ms-flex-direction:row;
+          flex-direction:row;
 }
 
 
